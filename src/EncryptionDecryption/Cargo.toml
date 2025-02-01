@@ -1,0 +1,20 @@
+[package]
+name = "win32api"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+winapi = {version="0.3.9", features=["winuser","errhandlingapi","libloaderapi","fileapi","winbase","processthreadsapi","handleapi","wincrypt"]}
+windows = {version ="0.58.0",features=["Win32_Foundation","Win32_System_Threading","Win32_Storage_FileSystem","Win32_System_LibraryLoader"]}
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+rand = "0.8"
+serde_json = "1.0.128"
+rsa = { version = "0.9.6" }
+base64 = "0.22.1"
+iced = "0.12"
+iced_style = "0.12"
+iced_winit = "0.10"
+winit = "0.28"
+
